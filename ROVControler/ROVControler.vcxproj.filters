@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Serial">
+      <UniqueIdentifier>{721d24b1-a875-48fe-bcf9-1c6b32860c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Serial">
+      <UniqueIdentifier>{8f3cb826-7be2-4e5a-94eb-cbafbf5782c2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ROVControler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ROVControlerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CXBOXController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="serial\Serial.h">
+      <Filter>Header Files\Serial</Filter>
+    </ClInclude>
+    <ClInclude Include="serial\EnumSerial.h">
+      <Filter>Header Files\Serial</Filter>
+    </ClInclude>
+    <ClInclude Include="serial\enumser.h">
+      <Filter>Header Files\Serial</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialControler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ROVControler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ROVControlerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CXBOXController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="serial\Serial.cpp">
+      <Filter>Source Files\Serial</Filter>
+    </ClCompile>
+    <ClCompile Include="serial\EnumSerial.cpp">
+      <Filter>Source Files\Serial</Filter>
+    </ClCompile>
+    <ClCompile Include="serial\enumser.cpp">
+      <Filter>Source Files\Serial</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialControler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ROVControler.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ROVControler.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ROVControler.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

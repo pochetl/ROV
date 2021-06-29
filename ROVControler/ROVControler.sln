@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ROVControler", "ROVControler.vcxproj", "{DFFB4CC2-3739-483D-A940-000BF66089CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FLIRDaemon", "..\FLIRDaemon\FLIRDaemon.vcxproj", "{E4F81C85-5543-4AB0-BEFE-C0659C74B25E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		ReleaseNoLock|x64 = ReleaseNoLock|x64
+		ReleaseNoLock|x86 = ReleaseNoLock|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFFB4CC2-3739-483D-A940-000BF66089CE}.Debug|x64.ActiveCfg = Debug|x64
+		{DFFB4CC2-3739-483D-A940-000BF66089CE}.Debug|x64.Build.0 = Debug|x64
+		{DFFB4CC2-3739-483D-A940-000BF66089CE}.Debug|x86.ActiveCfg = Debug|Win32
+		{DFFB4CC2-3739-483D-A940-000BF66089CE}.Debug|x86.Build.0 = Debug|Win32
+		{DFFB4CC2-3739-483D-A940-000BF66089CE}.Release|x64.ActiveCfg = Release|x64
+		{DFFB4CC2-3739-483D-A940-000BF66089CE}.Release|x64.Build.0 = Release|x64
+		{DFFB4CC2-3739-483D-A940-000BF66089CE}.Release|x86.ActiveCfg = Release|Win32
+		{DFFB4CC2-3739-483D-A940-000BF66089CE}.Release|x86.Build.0 = Release|Win32
+		{DFFB4CC2-3739-483D-A940-000BF66089CE}.ReleaseNoLock|x64.ActiveCfg = Release|x64
+		{DFFB4CC2-3739-483D-A940-000BF66089CE}.ReleaseNoLock|x64.Build.0 = Release|x64
+		{DFFB4CC2-3739-483D-A940-000BF66089CE}.ReleaseNoLock|x86.ActiveCfg = Release|Win32
+		{DFFB4CC2-3739-483D-A940-000BF66089CE}.ReleaseNoLock|x86.Build.0 = Release|Win32
+		{E4F81C85-5543-4AB0-BEFE-C0659C74B25E}.Debug|x64.ActiveCfg = Debug|x64
+		{E4F81C85-5543-4AB0-BEFE-C0659C74B25E}.Debug|x64.Build.0 = Debug|x64
+		{E4F81C85-5543-4AB0-BEFE-C0659C74B25E}.Debug|x86.ActiveCfg = Debug|Win32
+		{E4F81C85-5543-4AB0-BEFE-C0659C74B25E}.Release|x64.ActiveCfg = Release|x64
+		{E4F81C85-5543-4AB0-BEFE-C0659C74B25E}.Release|x64.Build.0 = Release|x64
+		{E4F81C85-5543-4AB0-BEFE-C0659C74B25E}.Release|x86.ActiveCfg = Release|Win32
+		{E4F81C85-5543-4AB0-BEFE-C0659C74B25E}.Release|x86.Build.0 = Release|Win32
+		{E4F81C85-5543-4AB0-BEFE-C0659C74B25E}.ReleaseNoLock|x64.ActiveCfg = ReleaseNoLock|x64
+		{E4F81C85-5543-4AB0-BEFE-C0659C74B25E}.ReleaseNoLock|x64.Build.0 = ReleaseNoLock|x64
+		{E4F81C85-5543-4AB0-BEFE-C0659C74B25E}.ReleaseNoLock|x86.ActiveCfg = ReleaseNoLock|Win32
+		{E4F81C85-5543-4AB0-BEFE-C0659C74B25E}.ReleaseNoLock|x86.Build.0 = ReleaseNoLock|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DCF7393-9D2A-4D5A-BF62-19ABB47A59E4}
+	EndGlobalSection
+EndGlobal
