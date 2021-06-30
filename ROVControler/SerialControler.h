@@ -5,7 +5,7 @@
 #include "Serial.h"
 class SerialControler
 {public:
-	int buildMotorPacket(short motor1, short motor2, short motor3, short motor4, char outPutaray[]);
+	int buildMotorPacket(float motor1, float motor2, float motor3, float motor4, char outPutaray[]);
 	bool start();
 	bool stop();
 	bool test();

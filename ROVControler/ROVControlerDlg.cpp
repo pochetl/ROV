@@ -257,15 +257,37 @@ void CROVControlerDlg::OnTimer(UINT_PTR nIDEvent)
 			count = 0;
 		}
 
+		XINPUT_STATE test1=Player1->GetState();
+
+		float RealX, RealY, LMotor, RMotor;
+		RealX = test1.Gamepad.sThumbLX / 32767.0;
+		RealY = test1.Gamepad.sThumbLY / 32767.0;
+
+
+		LMotor = RealY + RealX;
+		RMotor = RealY +(RealX*-1);
+
+		if (LMotor > 1) {
+			RMotor = RMotor / LMotor;
+			LMotor = 1;
+		}
+
+		else if (RMotor > 1) {
+			LMotor = LMotor / RMotor;
+			RMotor = 1;
+		}
+
+
+
 		char testArray[10];
-		int size = serial.buildMotorPacket(Player1->GetState().Gamepad.sThumbLX, Player1->GetState().Gamepad.sThumbLY, 0x6700, 0x8500, testArray);
+		int size = serial.buildMotorPacket(LMotor, RMotor, 0x6700, 0x8500, testArray);
 		serial.writePacket(testArray, size);
 		if (allowRedraw)
 		{
 
 			XINPUT_STATE state = Player1->GetState();
-			this->leftSides.Format("%d", Player1->GetState().Gamepad.sThumbLX);
-			this->leftUp.Format("%d", Player1->GetState().Gamepad.sThumbLY);
+			this->leftSides.Format("%.2f %.2f", RealX,RealY);
+			this->leftUp.Format("%.2f %.2f",LMotor,RMotor);
 			m_ptXY.x = state.Gamepad.sThumbLX* scaleX + (SHORT_MAX* scaleX)*.9;
 			m_ptXY.y = (-1*state.Gamepad.sThumbLY*scaleY) + (SHORT_MAX* scaleY)*.9;
 

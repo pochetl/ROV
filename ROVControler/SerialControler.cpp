@@ -12,20 +12,20 @@ bool SerialControler::writePacket(char outPutaray[], int size) {
 
 
 
-int  SerialControler::buildMotorPacket(short motor1, short motor2, short motor3, short motor4, char outPutaray[]) {
+int  SerialControler::buildMotorPacket(float LeftMotor, float RightMotor, float motor3, float motor4, char outPutaray[]) {
 
 
 	outPutaray[0] = 0xFE;
 	outPutaray[1] = 0x8;
-	outPutaray[2] = motor1 / 256;
-	outPutaray[3] = motor2 / 256;
-	outPutaray[4] = motor3 / 256;
-	outPutaray[5] = motor4 / 256;
+	outPutaray[2] = LeftMotor * 127;
+	outPutaray[3] = RightMotor * 127;
+	outPutaray[4] = motor3 * 127;
+	outPutaray[5] = motor4 * 127;
 	outPutaray[6] = 0;
 	outPutaray[7] = 0;
 
 	CString Temp;
-	Temp.Format("%.1f %.1f", motor1 / 256, motor2 / 256);
+	Temp.Format("%.1f %.1f", LeftMotor / 256, RightMotor / 256);
 	OutputDebugString(Temp);
 
 	int counter = 0;
